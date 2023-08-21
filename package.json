@@ -1,0 +1,11 @@
+{
+  "name": "shiny-spork",
+  "version": "1.0.0",
+  "description": "tbd",
+  "main": "main.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Orni & NarcoticSoda",
+  "license": "LGPL-3.0-or-later"
+}
