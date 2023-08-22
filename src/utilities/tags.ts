@@ -1,4 +1,5 @@
-import { Definer } from "./define"
+import { tradeSelector } from "../generators/trade_selector"
+import { Definer } from "../generators/define"
 import { atmosphere } from "../data table/atmosphere_tags"
 import { biosphere } from "../data table/biosphere_tags"
 import { population } from "../data table/population_tags"
@@ -12,17 +13,17 @@ const bios = Definer(biosphere)
 const pop = Definer(population)
 const tchlvl = Definer(techLevel)
 const temp = Definer(temperature)
-const trade = 
-const world = 
+const trade = tradeSelector(highTradeTag, lowTradeTag)
+const world = Definer(worldTag)
 
 
 const planet = {
     planetName,
-    atmosphere,
-    biosphere,
-    population,
-    techLevel,
-    temperature,
+    atmos,
+    bios,
+    pop,
+    tchlvl,
+    temp,
     trade,
     world,
 }
