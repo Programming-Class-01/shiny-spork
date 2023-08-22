@@ -18,7 +18,6 @@ const world = Definer(worldTag)
 
 
 const planet = {
-    planetName,
     atmos,
     bios,
     pop,
