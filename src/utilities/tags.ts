@@ -26,3 +26,5 @@ const planet = {
     trade,
     world,
 }
+
+export {planet}
