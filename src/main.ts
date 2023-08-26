@@ -9,5 +9,5 @@ console.log(
      The population is ${planet.pop?.description}.
      The tech level is ${planet.tchlvl?.description}.
      The trade nature is ${planet.trade?.description}.
-     The local commodity is ${commodity?.cargo}, ${commodity?.cost} credits, ${commodity?.techLevel}, ${commodity?.type}.`
- );
+     The local commodity is ${commodity?.cargo}, ${commodity?.cost} credits, tech level ${commodity?.techLevel}, ${commodity?.type}.`
+);

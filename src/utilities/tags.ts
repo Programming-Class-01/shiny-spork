@@ -16,7 +16,6 @@ const temp = Definer(temperature)
 const trade = tradeSelector(highTradeTag, lowTradeTag)
 const world = Definer(worldTag)
 
-
 const planet = {
     atmos,
     bios,
