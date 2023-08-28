@@ -8,5 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Orni & NarcoticSoda",
-  "license": "LGPL-3.0-or-later"
+  "license": "LGPL-3.0-or-later",
+  "dependencies": {
+    "ts-results": "^3.3.0"
+  }
 }
