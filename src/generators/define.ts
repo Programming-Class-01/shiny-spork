@@ -1,11 +1,11 @@
-import { getRandomIntInclusive } from "../utilities/roll_die";
 import { Result, Ok, Err } from "ts-results";
+import { ITag } from "../utilities/ITag";
 
-function Definer<T>(tags: T[]): Result<T, Error> {
-   const dieRoll = getRandomIntInclusive(tags.length - 1, 0)
-    const result = tags[dieRoll]
-    if (!result) return Err(new Error(`There seems to be a problem.`))
+function Definer(tags: ITag[]): Result<ITag, string> {
+    if (tags.length === 0) return Err(`Empty Array`)
+    const result = tags.at(Math.floor(Math.random() * tags.length))
+    if (!result) return Err(`undefined`)
     return Ok(result)
 }
 
-export {Definer}
+export { Definer }
