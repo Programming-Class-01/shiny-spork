@@ -6,13 +6,13 @@ function tradeSelector(highTradeTag: ITradeTag[], lowTradeTag: ITradeTag[]): Res
     if (highTradeTag.length === 0 || lowTradeTag.length === 0) return Err(`Empty Array`)
     if (coinFlip()) { 
         const selectedTrade = getRandomIntInclusive(highTradeTag.length)
-        if (selectedTrade.err) return Err(`getRandomIntInclusive produced an error. Verify Array size.`)
+        if (selectedTrade.err) return Err(`Array sizing error`)
         const result = highTradeTag[selectedTrade.val]
         if (!result) return Err(`There is a problem with selecting High Trade`)
         return Ok(result)
     } else {
         const selectedTrade = getRandomIntInclusive(lowTradeTag.length)
-        if (selectedTrade.err) return Err(`getRandomIntInclusive produced an error. Verify Array size.`)
+        if (selectedTrade.err) return Err(`Array sizing error`)
         const result = lowTradeTag[selectedTrade.val]
         if (!result) return Err(`There is a problem with selecting Low Trade`)
         return Ok(result)
