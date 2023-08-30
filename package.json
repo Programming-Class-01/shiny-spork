@@ -11,5 +11,8 @@
   "license": "LGPL-3.0-or-later",
   "dependencies": {
     "ts-results": "^3.3.0"
+  },
+  "devDependencies": {
+    "tslib": "^2.6.2"
   }
 }
