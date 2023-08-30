@@ -8,13 +8,13 @@ import { temperature } from "../data table/temperature_tags"
 import { lowTradeTag, highTradeTag } from "../data table/trade_tags"
 import { worldTag } from "../data table/world_tags"
 
-const atmos = Definer(atmosphere)
-const bios = Definer(biosphere)
-const pop = Definer(population)
-const tchlvl = Definer(techLevel)
-const temp = Definer(temperature)
-const trade = tradeSelector(highTradeTag, lowTradeTag)
-const world = Definer(worldTag)
+const atmos = Definer(atmosphere).unwrap()
+const bios = Definer(biosphere).unwrap()
+const pop = Definer(population).unwrap()
+const tchlvl = Definer(techLevel).unwrap()
+const temp = Definer(temperature).unwrap()
+const trade = tradeSelector(highTradeTag, lowTradeTag).unwrap()
+const world = Definer(worldTag).unwrap()
 
 const planet = {
     atmos,
