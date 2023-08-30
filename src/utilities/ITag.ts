@@ -3,7 +3,7 @@ interface ITag {
     cargo?: string,
     cost?: number,
     techLevel?: number,
-    type?: []
+    type?: string[]
 
 }
 
