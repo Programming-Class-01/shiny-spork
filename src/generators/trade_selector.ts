@@ -1,6 +1,6 @@
 import { getRandomIntInclusive, coinFlip } from "../utilities/roll_die";
 import { ITradeTag } from "../data_table/trade_tags";
-import { Result, Ok, Err } from "ts-results";
+import {Result, Ok, Err} from "ts-results"
 
 function tradeSelector(highTradeTag: ITradeTag[], lowTradeTag: ITradeTag[]): Result<ITradeTag, string> {
     if (highTradeTag.length === 0 || lowTradeTag.length === 0) return Err(`Empty Array`)
