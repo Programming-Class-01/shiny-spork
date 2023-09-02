@@ -12,4 +12,8 @@ const techLevel = [
     { description: `TL5, pretech with surviving infrastructure` },
 ];
 
-export { techLevel };
+interface ITechLevel {
+    description: string,
+}
+
+export { techLevel, ITechLevel };

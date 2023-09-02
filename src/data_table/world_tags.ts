@@ -101,4 +101,8 @@ const worldTag = [
     { description: "Zombies" }
   ];
   
-  export {worldTag };
+  interface IWorldTags {
+    description: string,
+}
+
+  export {worldTag, IWorldTags };

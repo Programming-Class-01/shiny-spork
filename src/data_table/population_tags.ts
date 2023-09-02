@@ -12,5 +12,8 @@ const population = [
     { description: `Alien inhabitants` },
 ];
 
+interface IPopulation {
+    description: string,
+}
 
-export { population };
+export { population, IPopulation };

@@ -12,4 +12,8 @@ const atmosphere = [
     { description: `Both corrosive and invasive in its effects` }
 ];
 
-export { atmosphere };
+interface IAtmosphere {
+    description: string,
+}
+
+export { atmosphere, IAtmosphere };

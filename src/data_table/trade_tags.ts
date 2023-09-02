@@ -26,6 +26,7 @@ const highTradeTag = [
     { tag: `Vendor`, description: `Something precious is only made here` },
     { tag: `Xenophobic`, description: `The locals fear and hate outsiders` }
 ];
+
 interface ITradeTag {
     tag: string,
     description: string

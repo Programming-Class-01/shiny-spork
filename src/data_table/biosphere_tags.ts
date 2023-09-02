@@ -12,4 +12,8 @@ const biosphere = [
     { description: `Engineered biosphere` },
 ];
 
-export { biosphere };
+interface IBiosphere {
+    description: string,
+}
+
+export { biosphere, IBiosphere };

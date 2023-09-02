@@ -12,4 +12,8 @@ const temperature = [
     { description: `Burning, intolerably hot on its surface` },
 ];
 
-export { temperature };
+interface ITemperature {
+    description: string,
+}
+
+export { temperature, ITemperature };

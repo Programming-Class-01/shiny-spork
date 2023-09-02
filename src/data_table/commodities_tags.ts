@@ -209,7 +209,7 @@ interface ICommodities {
   cargo: string
   cost: number
   techLevel: number
-  type: []
+  type: string[]
 }[];
 
 export {standardCommodities, ICommodities};
