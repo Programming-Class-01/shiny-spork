@@ -17,7 +17,7 @@ const highTradeTag = [
     { tag: `Restricted`, description: `Someone is restraining trade there` },
     { tag: `Scarcity`, description: `The world direly lacks something` },
     { tag: `Secret`, description: `The outside cosmos is a secret there` },
-    { tag: `Sophisticated`, description: `They're jaded toward far traders` },
+    { tag: `Sophisticated`, description: `They're jaded toward far traders` }, 
     { tag: `Theocratic`, description: `Trade goes through priest-rulers` },
     { tag: `Thriving`, description: `The local economy is booming` },
     { tag: `Tribute`, description: `Everyone works to provide tribute` },
