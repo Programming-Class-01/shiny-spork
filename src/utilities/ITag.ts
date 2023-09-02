@@ -4,7 +4,6 @@ interface ITag {
     cost?: number,
     techLevel?: number,
     type?: string[]
-
 }
 
 export { ITag };
